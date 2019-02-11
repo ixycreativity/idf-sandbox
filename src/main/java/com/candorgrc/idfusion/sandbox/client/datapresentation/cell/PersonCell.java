@@ -104,9 +104,9 @@ public class PersonCell extends AbstractCell<PersonJSO> {
 
 	/**
 	 * Cell XHTML Template.
-	 * 
-	 * @designer: feel free to modify it in order to meet your expectations
 	 *
+	 * @designer: feel free to modify it in order to meet your expectations
+	 *@developer I need at {4} another classes: fa-female instead of Female, and fa-male instead of Male, in order to use font awesome icons
 	 */
 	public interface Template extends SafeHtmlTemplates {
 		//@formatter:off
@@ -124,19 +124,19 @@ public class PersonCell extends AbstractCell<PersonJSO> {
 					+ "</header>"
 					+ "<section>"
 						+ "<div class='personal-info'>"
-							+ "<i class='{4}' title='{4}'></i>"
+							+ "<i class='fas {4}' title='{4}'></i>"
 							+ "<div class='race' title='Race'>{5}</div>"
 							+ "<div class='language' title='Language'>{6}</div>"
 						+ "</div>"
 						+ "<div class='education'>"
-							+ "<div class='university' title='University'>{7}</div>"
+							+ "<div class='university' title='University'><i class='fas fa-university'></i>{7}</div>"
 						+ "</div>"
 						+ "<div class='work'>"
-							+ "<div class='job-title' title='Job Title'>{10}</div>"
+							+ "<div class='job-title' title='Job Title'><i class='fas fa-briefcase'></i>{10}</div>"
 							+ "<div class='company' title='Company'>{13}</div>"
 							+ "<div class='department' title='Department'>{14}</div>"
 							+ "<div class='ein' title='Employer Identification Number'>{15}</div>"
-							+ "<div class='email' title='E-Mail'>{9}</div>"
+							+ "<div class='email' title='E-Mail'><i class='fas fa-envelope'></i>{9}</div>"
 						+ "</div>"
 						+ "<aside>"
 							+ "<div class='linkedin-skill' title='LinkedIn Skill'>{11}</div>"

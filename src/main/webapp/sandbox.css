@@ -1,4 +1,7 @@
 /** Add css rules here for your application. */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 div {
   overflow: visible!important;
 }
@@ -83,7 +86,13 @@ header .ein{
   margin-top: -50px;
 }
 header .job-title{
-  margin-top: -45px;
+  margin-top: -55px;
+}
+header .linkedin-skill{
+    margin-top: -20px;
+}
+header .start{
+    margin-top: -20px;
 }
 header.controls{
   height: 50px;
@@ -122,7 +131,7 @@ header.controls button:hover{
 }
 .person-cell{
   width:250px;
-  height:474px;
+  height:490px;
   margin: 1%;
   float:left;
   border:1px solid #ddd;
@@ -139,14 +148,88 @@ box-shadow: 6px 7px 60px -36px rgba(0,0,0,0.75);
   margin-right: auto;
   text-align: center;
   color: #03a6db;
-  font-weight: bold;
+  font-weight: 300;
+  letter-spacing:-0.05em;
 }
 .person-cell figure img{
   width: 50%;
   height: auto;
+  background: #ddd;
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+figcaption{
+  white-space: normal;
+}
+figcaption span{
+    display:inline;
+}
+span.title{
+  padding-right:3px;
+  font-size: 0.8em;
+}
+span.first-name{
+  padding-right:3px;
+    font-size:1.3em;
+}
+span.last-name{
+  padding-right:3px;
+    font-size:1.3em;
+}
+span.suffix{
+  font-size: 0.8em;
+  font-weight: 400;
 }
 .person-cell section{
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
+  font-size: 0.8em;
+}
+i.Female{
+  background:#fad1cf;
+  float: left;
+  margin: 4px 2px 0px 0px;
+  height: 10px;
+  width: 10px;
+  display: block;
+  visibility: visible;
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+i.Male{
+  background: #b2eafd;
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin: 4px 2px 0px 0px;
+    display: block;
+    visibility: visible;
+    -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.person-cell section div{
+  padding-left: 20px;
+  color:#444;
+}
+.person-cell section div i{
+  margin-right: 4px;
+}
+.person-cell div.university, .person-cell div.company{
+  font-weight: bold;
+}
+.person-cell div.university, .person-cell div.job-title{
+  padding-top: 10px;
+  padding-left: 0px;
+}
+.person-cell div.email{
+  color: #03a6db;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+.person-cell section aside{
+  padding-left:16px;
 }
 nav.controls{
   background: #82e3ff;
@@ -187,6 +270,7 @@ button.edit{
 border-bottom-left-radius: 10px;
 }
 footer.footer-fetch{
+width: 1000px;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -202,6 +286,8 @@ button.fetch{
 button.fetch:hover{
     background: #b2eafd;
 }
+
+
 
 @media screen and (max-width: 1180px) {
   .grup{
