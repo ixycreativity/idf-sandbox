@@ -1,0 +1,215 @@
+/** Add css rules here for your application. */
+div {
+  overflow: visible!important;
+}
+header.filter-zone{
+  width:94.9%;
+  margin: 20px auto;
+  height: 400px;
+  background: #fc766d;
+  -webkit-box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
+    text-align:center;
+}
+header.filter-zone button, button.fetch{
+  background: #fff;
+  border:2px solid #e15248;
+  padding: 10px 30px;
+  margin-top: 10px;
+  text-align:center;
+  text-transform: uppercase;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+color:#e15248;
+font-weight:bold;
+cursor:pointer;
+-webkit-transition: background-color 0.3s ease-out;
+ -moz-transition: background-color 0.3s ease-out;
+ -o-transition: background-color 0.3s ease-out;
+ transition: background-color 0.3s ease-out;
+}
+header.filter-zone button:hover{
+    background: #fad1cf;
+}
+.grup{
+  width:25%;
+padding: 70px 0px;
+height: 200px;
+float: left;
+}
+.grup div{
+  margin-bottom: 15px;
+}
+.label, .start label, .end label {
+  width: 30%;
+  text-align: right;
+  display: block;
+  padding: 4px;
+}
+input, select{
+    padding:4px;
+    float:left;
+    margin-left: 35%;
+    margin-top: -30px;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border:2px solid #fff;
+}
+.grup1{
+  background: #82e3ff;
+}
+.grup2{
+  background: #73dbfd;
+}
+.grup3{
+  background: #3ecaf8;
+}
+.grup4{
+  background: #03a6db;
+}
+header .buzzword{
+  margin-top: 40px;
+}
+.ein input{
+  margin-top: -50px;
+}
+header .job-title{
+  margin-top: -45px;
+}
+header.controls{
+  height: 50px;
+  background: #ddd;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+header.controls button{
+  height: 50px;
+  background: #060619!important;
+  border:0px solid black;
+  float:right;
+  background: #fff;
+  padding: 10px 30px;
+  margin-top: 0px;
+  text-align:center;
+  text-transform: uppercase;
+color:#03a6db;
+font-weight:bold;
+cursor:pointer;
+-webkit-transition: all 0.3s ease-out;
+ -moz-transition: all 0.3s ease-out;
+ -o-transition: all 0.3s ease-out;
+ transition: all 0.3s ease-out;
+}
+header.controls button:hover{
+    background: #1c1c3f!important;
+    color:#fff;
+}
+.grid-view{
+  background: #fff!important;
+  width: 94.9%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.person-cell{
+  width:250px;
+  height:474px;
+  margin: 1%;
+  float:left;
+  border:1px solid #ddd;
+  position: relative;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 6px 7px 60px -36px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 7px 60px -36px rgba(0,0,0,0.75);
+box-shadow: 6px 7px 60px -36px rgba(0,0,0,0.75);
+}
+.person-cell figure{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #03a6db;
+  font-weight: bold;
+}
+.person-cell figure img{
+  width: 50%;
+  height: auto;
+}
+.person-cell section{
+  padding: 20px;
+}
+nav.controls{
+  background: #82e3ff;
+  height:53px;
+  width: 100%;
+  position: absolute;
+  bottom:-1px;
+  left:-1px;
+    border:1px solid #82e3ff;
+  -webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+nav.controls button{
+  background: #82e3ff;
+  border:0px solid #fff;
+  cursor:pointer;
+  width: 33%;
+  height:50px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+nav.controls button:hover{
+  background: #73dbfd;
+}
+button.edit{
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-left-radius: 10px;
+}
+footer.footer-fetch{
+  width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+button.fetch{
+  clear: both;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background: #fff;
+  border:2px solid #03a6db;
+  color:#03a6db;
+}
+button.fetch:hover{
+    background: #b2eafd;
+}
+
+
+
+@media screen and (max-width: 1180px) {
+  .grup{
+    width:50%;
+  }
+  header.filter-zone{
+    height: 740px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grup{
+    width:100%;
+  }
+  header.filter-zone{
+    height: 1600px;
+  }
+}

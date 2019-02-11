@@ -116,7 +116,7 @@
 	</dependencies>
 
 	<build>
-		<!-- Output classes directly into the webapp, so that IDEs and "mvn process-classes" 
+		<!-- Output classes directly into the webapp, so that IDEs and "mvn process-classes"
 			update them in DevMode -->
 		<outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
@@ -135,7 +135,7 @@
 						</goals>
 					</execution>
 				</executions>
-				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
+				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin
 					documentation at codehaus.org -->
 				<configuration>
 					<runTarget>sandbox.html</runTarget>
@@ -283,7 +283,7 @@
 		</plugins>
 	</build>
 
-	<!-- Profiles for setting properties that are different for development 
+	<!-- Profiles for setting properties that are different for development
 		and production. -->
 	<profiles>
 
@@ -300,40 +300,40 @@
 				<!-- GWT JavaScript compiler output -->
 				<gwt.style>PRETTY</gwt.style>
 				<gwt.logLevel>INFO</gwt.logLevel>
-				<!-- reduces compiled JS size by disabling run-time checking of cast 
+				<!-- reduces compiled JS size by disabling run-time checking of cast
 					operations -->
 				<gwt.disableCastChecking>false</gwt.disableCastChecking>
-				<!-- reduces compiled JS size by disabling some of java.lang.Class methods 
+				<!-- reduces compiled JS size by disabling some of java.lang.Class methods
 					(e.g. getName()); @bp set to 'false' in order to play nice with Java Reflection -->
 				<gwt.disableClassMetadata>false</gwt.disableClassMetadata>
 				<gwt.compiler.clusterFunctions>false</gwt.compiler.clusterFunctions>
 				<gwt.compiler.inlineLiteralParameters>false</gwt.compiler.inlineLiteralParameters>
-				<!-- DEPRECATED (thus set to FALSE): use Closure Compiler to further 
-					optimize the output JS; Set this to FALSE or comment it when you want to 
+				<!-- DEPRECATED (thus set to FALSE): use Closure Compiler to further
+					optimize the output JS; Set this to FALSE or comment it when you want to
 					generate Compiler Metrics, otherwise the metrics will not be generated -->
 				<gwt.compiler.enableClosureCompiler>false</gwt.compiler.enableClosureCompiler>
-				<!-- DEPRECATED (thus set to FALSE): Enables JavaScript output suitable 
+				<!-- DEPRECATED (thus set to FALSE): Enables JavaScript output suitable
 					for post-compilation by Closure Compiler -->
 				<gwt.compiler.closureFormattedOutput>false</gwt.compiler.closureFormattedOutput>
 				<!-- do NOT always recompile GWT; allow incremental compilation -->
 				<gwt.compiler.force>false</gwt.compiler.force>
-				<!-- set it to true when in Development Mode, as it will make your compilation 
+				<!-- set it to true when in Development Mode, as it will make your compilation
 					faster by skipping some of the normal steps. -->
 				<gwt.draftCompile>true</gwt.draftCompile>
-				<!-- If set to TRUE will throw '[ERROR] Current binding properties are 
-					expanding to more than one permutation but per-file compilation requires 
+				<!-- If set to TRUE will throw '[ERROR] Current binding properties are
+					expanding to more than one permutation but per-file compilation requires
 					that each compile operate on only one permutation.' -->
 				<gwt.compiler.incremental>false</gwt.compiler.incremental>
 				<gwt.disableRunAsync>false</gwt.disableRunAsync>
-				<!-- use the lowest level of GWT Compiler optimization for Development 
+				<!-- use the lowest level of GWT Compiler optimization for Development
 					Mode -->
 				<gwt.compiler.optimizationLevel>0</gwt.compiler.optimizationLevel>
-				<!-- do NOT use Aggressive GWT Compiler optimization for Development 
+				<!-- do NOT use Aggressive GWT Compiler optimization for Development
 					Mode -->
 				<gwt.compiler.disableAggressiveOptimization>true</gwt.compiler.disableAggressiveOptimization>
 				<gwt.compiler.optimizeDataflow>false</gwt.compiler.optimizeDataflow>
 				<gwt.compiler.ordinalizeEnums>false</gwt.compiler.ordinalizeEnums>
-				<!-- EXPERIMENTAL: Emit extra information allow chrome dev tools to display 
+				<!-- EXPERIMENTAL: Emit extra information allow chrome dev tools to display
 					Java identifiers in many places instead of JavaScript functions. -->
 				<gwt.compiler.methodNameDisplayMode>FULL</gwt.compiler.methodNameDisplayMode>
 				<gwt.saveSource>true</gwt.saveSource>
