@@ -56,9 +56,6 @@ float: left;
   display: block;
   padding: 4px;
 }
-.start{
-  margin-top: -16px;
-}
 input, select{
     padding:4px;
     float:left;
@@ -81,24 +78,25 @@ border:2px solid #fff;
 .grup4{
   background: #9b70ce;
 }
+header .email{
+  margin-top: 44px;
+}
 header .buzzword{
-  margin-top: 40px;
+  font-style: normal;
+}
+header .job-title{
+  margin-top: -30px;
 }
 header .ein{
   margin-top: -10px;
 }
 .ein input{
-  margin-top: -50px;
-}
-header .job-title{
-  margin-top: -55px;
-}
-header .linkedin-skill{
-    margin-top: -20px;
+  margin-top: -44px;
 }
 header .start{
-    margin-top: -20px;
+    margin-top:-16px;
 }
+
 header.controls{
   height: 50px;
   background: #fff;
@@ -125,7 +123,7 @@ cursor:pointer;
  transition: all 0.3s ease-out;
 }
 header.controls button:hover{
-    background: #1c1c3f!important;
+    background: #1a0024!important;
     color:#fff;
 }
 .grid-view{

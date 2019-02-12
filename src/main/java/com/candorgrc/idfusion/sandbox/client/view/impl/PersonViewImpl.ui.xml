@@ -57,21 +57,22 @@
 					<input type="text" class="value" />
 				</div></div>
 				<div class="grup grup3">
+				<div class="email">
+					<span class="label">E-Mail:</span>
+					<input type="text" class="value" />
+				</div>
 				<div class="buzzword">
 					<span class="label">Buzzword:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="email">
-					<span class="label">E-Mail:</span>
+				<div class="linkedin-skill">
+					<span class="label">LinkedinIn Skill:</span>
 					<input type="text" class="value" />
-				</div></div>
+				</div>
+				</div>
 				<div class="grup grup4">
 				<div class="job-title">
 					<span class="label">Job Title:</span>
-					<input type="text" class="value" />
-				</div>
-				<div class="linkedin-skill">
-					<span class="label">LinkedinIn Skill:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="company">
@@ -83,7 +84,7 @@
 					<input type="text" class="value" />
 				</div>
 				<div class="ein">
-					<span class="label">Employer Identification Number:</span>
+					<span class="label">Employer Identif. No.:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="start">
@@ -92,7 +93,7 @@
 						min="2018-01-01" max="2018-12-31" />
 				</div>
 				<div class="end">
-					<label for="end">End</label>
+					<label for="end"> End</label>
 					<input type="date" id="end" value="2018-10-29"
 						min="2018-01-01" max="2018-12-31" />
 				</div></div>
