@@ -10,9 +10,9 @@ header.filter-zone{
   margin: 20px auto;
   height: 400px;
   background: #fc766d;
-  -webkit-box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
-  box-shadow: 6px 7px 60px -24px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 7px 345x -24px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 45px -24px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 45px -24px rgba(0,0,0,0.75);
     text-align:center;
 }
 header.filter-zone button, button.fetch{
@@ -134,6 +134,7 @@ header.controls button:hover{
   height:490px;
   margin: 1%;
   float:left;
+  padding: 0px;
   border:1px solid #ddd;
   position: relative;
   -webkit-border-radius: 10px;
@@ -169,17 +170,13 @@ span.title{
   padding-right:3px;
   font-size: 0.8em;
 }
-span.first-name{
+span.first-name, span.last-name{
   padding-right:3px;
-    font-size:1.3em;
-}
-span.last-name{
-  padding-right:3px;
-    font-size:1.3em;
+  font-size:1.3em;
+  font-weight: 400;
 }
 span.suffix{
   font-size: 0.8em;
-  font-weight: 400;
 }
 .person-cell section{
   padding: 0px 20px 0px 20px;
@@ -202,34 +199,33 @@ i.Male{
   height: 10px;
   width: 10px;
   float: left;
-  margin: 4px 2px 0px 0px;
+  margin: 4px 0px 0px 0px;
     display: block;
     visibility: visible;
     -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.person-cell section div{
-  padding-left: 20px;
+.person-cell section div, .person-cell section aside{
+  margin-left: 9px;
   color:#444;
 }
 .person-cell section div i{
   margin-right: 4px;
+  margin-left: -17px;
+}
+.person-cell section div i.Male, .person-cell section div i.Female{
+  margin-left: -6px;
 }
 .person-cell div.university, .person-cell div.company{
   font-weight: bold;
 }
-.person-cell div.university, .person-cell div.job-title{
+.person-cell div.university, .person-cell div.job-title, .person-cell div.university i{
   padding-top: 10px;
-  padding-left: 0px;
 }
 .person-cell div.email{
   color: #03a6db;
     padding-top: 10px;
-    padding-left: 0px;
-}
-.person-cell section aside{
-  padding-left:16px;
 }
 nav.controls{
   background: #82e3ff;
@@ -270,10 +266,11 @@ button.edit{
 border-bottom-left-radius: 10px;
 }
 footer.footer-fetch{
-width: 1000px;
+width: 100%;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  display: block;
 }
 button.fetch{
   clear: both;
@@ -282,6 +279,7 @@ button.fetch{
   background: #fff;
   border:2px solid #03a6db;
   color:#03a6db;
+margin-left: 43%;
 }
 button.fetch:hover{
     background: #b2eafd;
@@ -303,5 +301,10 @@ button.fetch:hover{
   }
   header.filter-zone{
     height: 1420px;
+  }
+}
+@media screen and (max-width: 468px) {
+  header.controls{
+    height: 100px;
   }
 }
