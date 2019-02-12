@@ -1,6 +1,7 @@
 /** Add css rules here for your application. */
 body{
   font-family: 'Open Sans', sans-serif;
+  background:#eee;
 }
 div {
   overflow: visible!important;
@@ -36,6 +37,10 @@ cursor:pointer;
 header.filter-zone button:hover{
     background: #fad1cf;
 }
+span.label, label{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:1.4em;
+}
 .grup{
   width:25%;
 padding: 70px 0px;
@@ -65,16 +70,16 @@ border-radius: 3px;
 border:2px solid #fff;
 }
 .grup1{
-  background: #82e3ff;
+  background: #b69fd1;
 }
 .grup2{
-  background: #73dbfd;
+  background: #ae91d1;
 }
 .grup3{
-  background: #3ecaf8;
+  background: #a480cf;
 }
 .grup4{
-  background: #03a6db;
+  background: #9b70ce;
 }
 header .buzzword{
   margin-top: 40px;
@@ -96,7 +101,7 @@ header .start{
 }
 header.controls{
   height: 50px;
-  background: #ddd;
+  background: #fff;
   width:95%;
   margin-left: auto;
   margin-right: auto;
@@ -111,7 +116,7 @@ header.controls button{
   margin-top: 0px;
   text-align:center;
   text-transform: uppercase;
-color:#03a6db;
+color:#9b70ce;
 font-weight:bold;
 cursor:pointer;
 -webkit-transition: all 0.3s ease-out;
@@ -135,6 +140,7 @@ header.controls button:hover{
   margin: 1%;
   float:left;
   padding: 0px;
+  background: #fff;
   border:1px solid #ddd;
   position: relative;
   -webkit-border-radius: 10px;
@@ -148,14 +154,15 @@ box-shadow: 6px 7px 60px -36px rgba(0,0,0,0.75);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: #03a6db;
+  color: #444;/* #9b70ce;*/
   font-weight: 300;
-  letter-spacing:-0.05em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .person-cell figure img{
   width: 50%;
   height: auto;
   background: #ddd;
+  margin-bottom: 4px;
   -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 border-radius: 50%;
@@ -168,15 +175,15 @@ figcaption span{
 }
 span.title{
   padding-right:3px;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 span.first-name, span.last-name{
   padding-right:3px;
-  font-size:1.3em;
+  font-size:1.8em;
   font-weight: 400;
 }
 span.suffix{
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 .person-cell section{
   padding: 0px 20px 0px 20px;
@@ -224,17 +231,17 @@ i.Male{
   padding-top: 10px;
 }
 .person-cell div.email{
-  color: #03a6db;
+  color: #9b70ce;
     padding-top: 10px;
 }
 nav.controls{
-  background: #82e3ff;
+  background: #b69fd1;
   height:53px;
   width: 100%;
   position: absolute;
   bottom:-1px;
   left:-1px;
-    border:1px solid #82e3ff;
+    border:1px solid #b69fd1;
   -webkit-border-bottom-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
 -moz-border-radius-bottomright: 10px;
@@ -243,7 +250,7 @@ border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 }
 nav.controls button{
-  background: #82e3ff;
+  background: #b69fd1;
   border:0px solid #fff;
   cursor:pointer;
   width: 33%;
@@ -255,7 +262,7 @@ nav.controls button{
    transition: all 0.3s ease-out;
 }
 nav.controls button:hover{
-  background: #73dbfd;
+  background: #ae91d1;
 }
 .buzzword{
   font-style: italic;
@@ -277,12 +284,12 @@ button.fetch{
   margin-top: 30px;
   margin-bottom: 70px;
   background: #fff;
-  border:2px solid #03a6db;
-  color:#03a6db;
+  border:2px solid #9b70ce;
+  color:#9b70ce;
 margin-left: 43%;
 }
 button.fetch:hover{
-    background: #b2eafd;
+    background: #cac3d3;
 }
 
 
