@@ -1,6 +1,6 @@
 /** Add css rules here for your application. */
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background:#eee;
 }
 div {
@@ -38,12 +38,12 @@ header.filter-zone button:hover{
     background: #fad1cf;
 }
 span.label, label{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size:1.4em;
+  font-size:1em;
+  font-weight: bold;
 }
 .grup{
   width:25%;
-padding: 70px 0px;
+padding: 90px 0px 50px 0px;
 height: 200px;
 float: left;
 }
@@ -79,10 +79,16 @@ border:2px solid #fff;
   background: #9b70ce;
 }
 header .email{
-  margin-top: 44px;
+  margin-top: 40px;
 }
 header .buzzword{
   font-style: normal;
+}
+header .linkedin-skill{
+    margin-top: -10px;
+}
+header .linkedin-skill input{
+    margin-top: -40px;
 }
 header .job-title{
   margin-top: -30px;
@@ -91,10 +97,10 @@ header .ein{
   margin-top: -10px;
 }
 .ein input{
-  margin-top: -44px;
+  margin-top: -40px;
 }
 header .start{
-    margin-top:-16px;
+    margin-top:-10px;
 }
 
 header.controls{
